@@ -33,7 +33,7 @@ a {
 
 .daybox {
     float: left;
-    width: 14%;
+    width: 14.2%;
     height: 30px;
     text-align: center;
     line-height: 30px;
@@ -42,4 +42,27 @@ a {
 .weekday {
     background: #a47719;
     font-weight: bold;
+}
+
+.left-colomn
+{
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+.right-colomn
+{
+    float: right;
+    width: 20%;
+    text-align: left;
+}
+
+.monthbox {
+    float: right;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: small;
+    padding: 0 1em;
 }
