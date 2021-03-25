@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    margin: 0;
+    background: #f9ecc3;
+}
+
+a {
+    text-decoration: none;
+    color: #a47719;;
+}
+
+.head {
+    background: #a47719;
+    padding: 20px 0;
+}
+
+.head h1 {
+    margin: 0;
+}
+
+.calendar {
+    margin: 10px 20%;
+}
+
+.daybox {
+    float: left;
+    width: 14%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.weekday {
+    background: #a47719;
+    font-weight: bold;
+}
