@@ -6,7 +6,18 @@ body {
 
 a {
     text-decoration: none;
-    color: #a47719;;
+    color: #a47719;
+}
+
+a.link {
+    font-weight: bold;
+    padding: 0 0.2em;
+    border-bottom: 2px solid #a47719;
+}
+
+a.link:hover {
+    background: #a47719;
+    color: #f9ecc3;
 }
 
 .head {
@@ -28,7 +39,8 @@ a {
 }
 
 .calendar {
-    margin: 10px 20%;
+    margin: 0 20%;
+    padding: 0 0;
 }
 
 .daybox {
@@ -65,4 +77,19 @@ a {
     line-height: 30px;
     font-size: small;
     padding: 0 1em;
+}
+
+.links {
+    border-top: #967227 solid 1px;
+    padding: 1em;
+    color: #a47719;
+}
+
+.links p {
+    margin: 0.5em 0;
+}
+
+.clr {
+    clear: both;
+    height: 3em;
 }
