@@ -18,6 +18,15 @@ a {
     margin: 0;
 }
 
+.description {
+    margin: 1em 20%;
+    font-size: small;
+}
+
+.description span {
+    display: inline;
+}
+
 .calendar {
     margin: 10px 20%;
 }
