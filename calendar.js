@@ -3,20 +3,22 @@ const startDate = new Date(2020, 10, 30); //2020年11月30日
 
 var outBox = document.getElementById("data");
 var monthBox = document.getElementById("month");
+var indexBox = document.getElementById("index");
 var d = new Date();
+var i = new Number();
 
 d.setTime(startDate.getTime());
-var index = 0;
+i = 0;
 while(d<=today)
 {
     var para = document.createElement("div");
     var node = document.createTextNode(d.getDate());
     para.className = "daybox";
-    if(d>submitDate[index].date)
+    if(d>submitDate[i].date)
     {
-        index++;
+        i++;
     }
-    para.style = "background: " + submitDate[index].bgColor + "; color: " + submitDate[index].fontColor;
+    para.style = "background: " + submitDate[i].bgColor + "; color: " + submitDate[i].fontColor;
     para.appendChild(node);
     outBox.appendChild(para);
     d.setDate(d.getDate()+1);
@@ -35,6 +37,41 @@ while(d<=today)
     }
     para.appendChild(node);
     monthBox.appendChild(para);
+
+    d.setDate(d.getDate()+7);
+}
+
+d.setTime(startDate.getTime());
+d.setDate(d.getDate()+6);
+i = 0;
+while(d<=today)
+{
+    var para = document.createElement("div");
+    var node = document.createTextNode("");
+    para.className = "indexbox";
+    if(d>submitDate[i].date)
+    {
+        i++;
+        if(submitDate[i].index>0)
+        {
+            var innerPara = document.createElement("span");
+            var innerNode = document.createTextNode("●");
+            var str = new String();
+            innerPara.appendChild(innerNode);
+            innerPara.style = "color: "+submitDate[i].bgColor;
+            para.appendChild(innerPara);
+            str = " " +submitDate[i].index+"　"+submitDate[i].name;
+            if(i<submitDate.length-1)
+            {
+                str += "（"+(submitDate[i].date-submitDate[i-1].date)/86400000+"天）";
+            }else{
+                str += "（"+Math.floor((today-submitDate[i-1].date)/86400000)+"天，进行中）";
+            }
+            node = document.createTextNode(str);
+        }
+    }
+    para.appendChild(node);
+    indexBox.appendChild(para);
 
     d.setDate(d.getDate()+7);
 }
