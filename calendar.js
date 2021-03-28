@@ -44,7 +44,7 @@ while(d<=today)
 d.setTime(startDate.getTime());
 d.setDate(d.getDate()+6);
 i = 0;
-while(d<=today)
+while(i<submitDate.length-1)
 {
     var para = document.createElement("div");
     var node = document.createTextNode("");
