@@ -9,5 +9,6 @@ var submitDate = [
     {date: new Date(2021,  1, 25), bgColor: "#94C7C0", fontColor: "#3391C7", index: 6, name: "窥屏坑"},
     {date: new Date(2021,  2, 28), bgColor: "#F2F2F2", fontColor: "#999999", index: -1},
     {date: new Date(2021,  3, 28), bgColor: "#232F57", fontColor: "#9EABD8", index: 7, name: "皂皂"},
-    {date: new Date(2333, 11, 31), bgColor: "#B0AD28", fontColor: "#A3C6EE", index: 8, name: "Luojam"},
+    {date: new Date(2021,  4,  5), bgColor: "#B0AD28", fontColor: "#A3C6EE", index: 8, name: "Luojam"},
+    {date: new Date(2333, 11, 31), bgColor: "#528161", fontColor: "#1A3429", index: 9, name: "卫斯理"},
 ]
