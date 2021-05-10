@@ -11,5 +11,6 @@ var submitDate = [
     {date: new Date(2021,  3, 28), bgColor: "#232F57", fontColor: "#9EABD8", index: 7, name: "皂皂"},
     {date: new Date(2021,  4,  5), bgColor: "#B0AD28", fontColor: "#A3C6EE", index: 8, name: "Luojam"},
     {date: new Date(2021,  4,  6), bgColor: "#528161", fontColor: "#1A3429", index: 9, name: "卫斯理"},
-    {date: new Date(2333, 11, 31), bgColor: "#B5B5B5", fontColor: "#FF8615", index: 10, name: "硝基"},
+    {date: new Date(2021,  4,  9), bgColor: "#F2F2F2", fontColor: "#999999", index: -1},
+    {date: new Date(2333, 11, 31), bgColor: "#E8E160", fontColor: "#96893B", index: 10, name: "A"},
 ]
