@@ -68,6 +68,8 @@ while(i<submitDate.length-1)
                 str += "（"+Math.floor((today-submitDate[i-1].date)/86400000)+"天，进行中）";
             }
             node = document.createTextNode(str);
+        }else{
+            continue;
         }
     }
     para.appendChild(node);
