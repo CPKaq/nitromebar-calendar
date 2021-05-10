@@ -1,5 +1,6 @@
 const today = new Date();
 const startDate = new Date(2020, 10, 30); //2020年11月30日
+const may10th = new Date(2021, 4, 10); //2021年5月10日
 
 var outBox = document.getElementById("data");
 var monthBox = document.getElementById("month");
@@ -20,6 +21,12 @@ while(d<=today)
     }
     para.style = "background: " + submitDate[i].bgColor + "; color: " + submitDate[i].fontColor;
     para.appendChild(node);
+    if(d-may10th==0)
+    {
+        para.style = "background-image: linear-gradient(to right, #E8E160 50%, #FFFFFF 50%)";
+        para.innerHTML = "<span style=\"color:#96893B\">1</span><span style=\"color:#0F4C85\">0</span>"
+        i++;
+    }
     outBox.appendChild(para);
     d.setDate(d.getDate()+1);
 }
@@ -63,7 +70,13 @@ while(i<submitDate.length-1)
             str = " " +submitDate[i].index+"　"+submitDate[i].name;
             if(i<submitDate.length-1)
             {
-                str += "（"+(submitDate[i].date-submitDate[i-1].date)/86400000+"天）";
+                day = (submitDate[i].date-submitDate[i-1].date)/86400000
+                if(day<1)
+                {
+                    str += "（<1天）";
+                }else{
+                    str += "（"+ day +"天）";
+                }
             }else{
                 str += "（"+Math.floor((today-submitDate[i-1].date)/86400000)+"天，进行中）";
             }
