@@ -14,6 +14,7 @@ var submitDate = [
     {date: new Date(2021,  4,  9), bgColor: "#F2F2F2", fontColor: "#999999", index: -1},
     {date: new Date(2021,4,9, 12), bgColor: "#E8E160", fontColor: "#96893B", index: 10, name: "A"},
     {date: new Date(2021,  4, 10), bgColor: "#FFFFFF", fontColor: "#0F4C85", index: 11, name: "碳酸天剑"},
-    {date: new Date(2021,  4, 23), bgColor: "#F4FE8C", fontColor: "#270652", index: 12, name: "beeee"},
-    {date: new Date(2333, 11, 31), bgColor: "#8B968E", fontColor: "#796759", index: 13, name: "萧萧咸鱼晒海边"},
+    {date: new Date(2021,  4, 22), bgColor: "#F4FE8C", fontColor: "#270652", index: 12, name: "beeee"},
+    {date: new Date(2021,  4, 23), bgColor: "#8B968E", fontColor: "#796759", index: 13, name: "萧萧咸鱼晒海边"},
+    {date: new Date(2333, 11, 31), bgColor: "#B5B5B5", fontColor: "#FF8615", index: 14, name: "硝基"},
 ]
