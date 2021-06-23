@@ -1,6 +1,7 @@
-const today = new Date();
 const startDate = new Date(2020, 10, 30); //2020年11月30日
 const may10th = new Date(2021, 4, 10); //2021年5月10日
+const endDate = new Date(2021, 5, 20); //2021年6月20日
+var today = endDate;
 
 var outBox = document.getElementById("data");
 var monthBox = document.getElementById("month");
